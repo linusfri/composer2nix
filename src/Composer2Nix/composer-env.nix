@@ -16,7 +16,7 @@ let
         shopt -s dotglob
         unzip $src
         baseDir=$(find . -type d -mindepth 1 -maxdepth 1)
-        cd $baseDir
+        cd "$baseDir"
         mkdir -p $out
         mv * $out
       '';
